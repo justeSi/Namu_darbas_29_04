@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+html {
+    font-family: "Open Sans";
+    font-size: 12px;
+}
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #e2e2e2;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;   
+}
+
+.container-1{
+
+}
+.item-1 {
+    color: #000;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    
+    background-color: #383838;
+    padding-bottom: 10px;
+}
+.nav-left{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.nav-right {
+    margin: 0;
+    width: 40%;
+    display: inline-block;
+    
+}
+li {
+    list-style: none;
+    padding-right: 15px;
+}
+
+a {
+    color: #f2f2f2;
+    padding: 5px 18px;
+    text-decoration: none;
+    position: relative;
+    font-family: "Arapey";
+    font-size: 1.3rem; 
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+a:hover {
+    color: #50e9da;
+}
+
+/* Main dalis daroma su grid */
+.container-2 {
+    display: grid;
+    gap: 15px;
+    align-content: center;
+}
+
+.item-3 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
+/* aside dalis */
+.item-4 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 6;
+}
+
+.item-5 {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #f1f1f1;
+}
+
+.item-6 {
+    grid-column: 3;
+    grid-row: 2 / span 4;
+    background-color: #f1f1f1;
+}
+
+.item-7 {
+    grid-column: 3;
+    grid-row:  6;
+    background-color: #f1f1f1;
+}
+
+.item-8 {
+    color: #000;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    height: auto;
+}
+
+.fakeimg {
+    padding: 10px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+img {
+    object-fit: fill;
+    padding: 10px;
+}
+
+.fakeimg .img_1 {
+    max-width: 100%;
+
+}
+.side_img {
+    max-width: 100%;
+}
+#data {
+    font-family: "Arapay";
+    font-size: 1.3rem;
+}
+h1 {
+    font-size: 4rem; 
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    margin-bottom: 15px;
+    
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;   
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 10.4px;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 1.16rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 10.4px;
+}
+
+p {
+    font-size: 1.16rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 21.4px;
+}
+
+.item-8 h2 {
+    font-size: 1.16rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 16.4px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media all and (max-width: 800px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_bar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        
+    }
+    ul {
+        display: block !important;
+        /* width: 100%; */
+        margin-bottom: 0;
+    }
+        
+    .nav_right {
+        padding-top: 0;
+        margin-right: 45px;
+    }
+
+    .nav_left a {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        line-height: 3.5rem;
+    }
+}
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    a {
+        font-stretch: extra-expanded;
+    }
+}
