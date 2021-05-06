@@ -24,7 +24,7 @@ background: linear-gradient(0deg, rgba(5,5,5,0.9640231092436975) 0%, rgba(139,14
 
 }
 .item-1 {
-    color: #000;
+    color: #000000;
     padding: 30px;
     text-align: center;
     background-color: #ffffff;
@@ -51,7 +51,7 @@ background: linear-gradient(0deg, rgba(5,5,5,0.9640231092436975) 0%, rgba(139,14
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: spa;
+    justify-content: space-between;
 
 }
 
@@ -60,11 +60,13 @@ background: linear-gradient(0deg, rgba(5,5,5,0.9640231092436975) 0%, rgba(139,14
 }
 
 .navbar-links li a {
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-decoration: none;
     display: block;
     color: white;
     padding: 1rem;
+    font-stretch: ultra-expanded;
+    
 }
 .navbar-links li:hover {
     background-color: #555;
